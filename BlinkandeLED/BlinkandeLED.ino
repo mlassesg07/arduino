@@ -59,6 +59,17 @@ void loop() {
     delay(500);                   //Väntar 0,5sek
     digitalWrite(PinLed4, LOW);   //Sätter Led4 till låg
     delay(500);                   //Väntar 0,5sek
-
+    digitalWrite(PinLed1, HIGH);  //Sätter Led1 till hög
+    digitalWrite(PinLed2, HIGH);  //Sätter Led2 till hög
+    delay(2000);                  //Väntar 2sek
+    digitalWrite(PinLed1, LOW);   //Sätter Led1 till låg
+    digitalWrite(PinLed2, LOW);   //Sätter Led2 till låg
+    delay(2000);                  //Väntar 2sek
+    digitalWrite(PinLed3, HIGH);  //Sätter Led3 till hög
+    digitalWrite(PinLed4, HIGH);  //Sätter Led4 till hög
+    delay(2000);                  //Väntar 2sek
+    digitalWrite(PinLed3, LOW);   //Sätter Led3 till låg
+    digitalWrite(PinLed4, LOW);   //Sätter Led4 till låg
+    delay(2000);                  //Väntar 2sek
   }
 }
