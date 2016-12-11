@@ -1,4 +1,4 @@
-const int kPinLed = 13;		//Sätter LED till pinne 13
+const int kPinLed = 12;		//Sätter LED till pinne 12
 
 void setup()
 {
@@ -10,8 +10,8 @@ int delayTime = 1000;		//Sätter den globala variabeln delayTime till 1000
           
 void loop()
 {
-    delayTime = delayime - 100; //Minskar delayTime med 100 så länge som delayTime >= 0 om inte resetas delayTime till 1000
-    IF(delayTime <= 0){
+    delayTime = delayTime - 130; //Minskar delayTime med 100 så länge som delayTime >= 0 om inte resetas delayTime till 1000
+      if(delayTime <= 0){
       delayTime = 1000;
 		}
 	Serial.print("delayTime = "); 	//Skriv ut texten delayTime i serialmonitor
