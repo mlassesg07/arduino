@@ -10,7 +10,7 @@ int delayTime = 1000;		//Sätter den globala variabeln delayTime till 1000
           
 void loop()
 {
-    delayTime = delayTime - 130; //Minskar delayTime med 100 så länge som delayTime >= 0 om inte resetas delayTime till 1000
+    delayTime = delayTime - 130; //Minskar delayTime med 130 så länge som delayTime >= 0 om inte resetas delayTime till 1000
       if(delayTime <= 0){
       delayTime = 1000;
 		}
