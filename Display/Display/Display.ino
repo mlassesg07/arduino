@@ -11,13 +11,13 @@ void setup() {
   lcd.begin(16, 2);                      // set up the LCD's number of columns and rows
   lcd.clear();                           // Clear LCD
   lcd.setCursor(0,0);                    // Set cursor to x=0 and y=0
-  lcd.print("LCD Key Shield");           // Print text on LCD
+  lcd.print("Temperatur inne:");           // Print text on LCD
   lcd.setCursor(0,1);
-  lcd.print("Kjell & Company");
+  lcd.print("Luftfukighet:");
   delay(3000);
   lcd.clear();
   lcd.setCursor(0,0);
-  lcd.print("Press any Key:");
+  lcd.print("Temperatur ute:");
 }
 
 void loop() { 
