@@ -83,6 +83,7 @@ void loop() {
     //lcd.print("Temperatur: ");
     lcd.print(event.temperature);
     lcd.println(" *C");
+    delay(3000);
   }
   // Get humidity event and print its value.
   lcd.begin(16, 2);                     // set up the LCD's number of columns and rows
@@ -98,5 +99,6 @@ void loop() {
     //lcd.print("Luftfuktighet: ");
     lcd.print(event.relative_humidity);
     lcd.println("%");
+    delay(3000);
   }
 }
