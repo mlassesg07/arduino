@@ -37,7 +37,7 @@ void setup() {
   //Serial.begin(9600); 
   // Initialize device.
   dht.begin();
-  lcd.println("DHTxx Unified Sensor Example");
+  //lcd.println("DHTxx Unified Sensor Example");
   // Print temperature sensor details.
   sensor_t sensor;
   dht.temperature().getSensor(&sensor);
@@ -69,23 +69,33 @@ void loop() {
   // Delay between measurements.
   delay(delayMS);
   // Get temperature event and print its value.
+  lcd.begin(16, 2);                     // set up the LCD's number of columns and rows
+  lcd.clear();                          // Clear LCD
+  lcd.setCursor(0,0);                   // Set cursor to x=0 and y=0
+  lcd.print("Innetemperatur:");
+  lcd.setCursor(0,1);
   sensors_event_t event;  
   dht.temperature().getEvent(&event);
   if (isnan(event.temperature)) {
-    lcd.println("Error reading temperature!");
+    lcd.print("Error reading temperature!");
   }
   else {
-    lcd.print("Temperatur: ");
+    //lcd.print("Temperatur: ");
     lcd.print(event.temperature);
     lcd.println(" *C");
   }
   // Get humidity event and print its value.
+  lcd.begin(16, 2);                     // set up the LCD's number of columns and rows
+  lcd.clear();                          // Clear LCD
+  lcd.setCursor(0,0);                   // Set cursor to x=0 and y=0
+  lcd.print("Luftfuktighet:");
+  lcd.setCursor(0,1);
   dht.humidity().getEvent(&event);
   if (isnan(event.relative_humidity)) {
-    lcd.println("Error reading humidity!");
+    lcd.print("Error reading humidity!");
   }
   else {
-    lcd.print("Luftfuktighet: ");
+    //lcd.print("Luftfuktighet: ");
     lcd.print(event.relative_humidity);
     lcd.println("%");
   }
