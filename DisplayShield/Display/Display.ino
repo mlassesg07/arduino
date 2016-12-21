@@ -1,9 +1,11 @@
+#include <LiquidCrystal.h>
+
 // 87876 LCD Shield för Arduino
 // 16x2 tecken och knappar
 // Kjell & Company 
 
 // include the library code:
-#include <LiquidCrystal.h>
+// #include <LiquidCrystal.h>
 
 LiquidCrystal lcd(8, 9, 4, 5, 6, 7);   // initialize the library with the numbers of the interface pins
 
@@ -11,13 +13,13 @@ void setup() {
   lcd.begin(16, 2);                      // set up the LCD's number of columns and rows
   lcd.clear();                           // Clear LCD
   lcd.setCursor(0,0);                    // Set cursor to x=0 and y=0
-  lcd.print("Temperatur inne:");           // Print text on LCD
+  lcd.print("ADs termometer");           // Print text on LCD
   lcd.setCursor(0,1);
-  lcd.print("Luftfukighet:");
+  lcd.print("mäter och mäter");
   delay(3000);
   lcd.clear();
   lcd.setCursor(0,0);
-  lcd.print("Temperatur ute:");
+  lcd.print("och mäter");
 }
 
 void loop() { 

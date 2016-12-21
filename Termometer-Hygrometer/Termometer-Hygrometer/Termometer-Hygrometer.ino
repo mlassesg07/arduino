@@ -67,7 +67,7 @@ void loop() {
     Serial.println("Error reading temperature!");
   }
   else {
-    Serial.print("Temperature: ");
+    Serial.print("Temperatur: ");
     Serial.print(event.temperature);
     Serial.println(" *C");
   }
@@ -77,7 +77,7 @@ void loop() {
     Serial.println("Error reading humidity!");
   }
   else {
-    Serial.print("Humidity: ");
+    Serial.print("Luftfuktighet: ");
     Serial.print(event.relative_humidity);
     Serial.println("%");
   }
