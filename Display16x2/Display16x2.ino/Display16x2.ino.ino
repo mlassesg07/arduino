@@ -48,13 +48,49 @@ void setup() {
   lcd.begin(16, 2);
   // Print a message to the LCD.
   lcd.print("ADs display!");
+  delay(3000); //Väntar 3sekunder
+  lcd.clear(); //Raderar texten
 }
 
 void loop() {
+  // set the cursor to column 0, line 0
+  lcd.setCursor(0, 0);
+  //Skriver ut texten Tid sedan reset: på displayen
+  lcd.print("Tid sedan reset:");
   // set the cursor to column 0, line 1
   // (note: line 1 is the second row, since counting begins with 0):
   lcd.setCursor(0, 1);
-  // print the number of seconds since reset:
+  // Skriver ut antal sekunder sedan reset: på nästa rad
   lcd.print(millis() / 1000);
+  //Väntar 3sekunder
+  delay(3000);
+  //Raderar texten
+  lcd.clear()
+    //Set the cursor to column 0, line 0
+    lcd.setCursor(0, 0);
+  //Skriver ut texten Vem är tomten?
+  lcd.print("Vem är tomten?");
+  //Set the cursor to column 0, line 1
+  lcd.setCursor(0, 1);
+  //Skriver ut texten Honken
+  lcd.print("Honken");
+  //Skriver ut Pastör efter föregående text
+  lcd.println("Pastör");
+  //Väntar 3sekunder
+  delay(3000);
+  //Raderar texten
+  lcd.clear()
+    //Set the cursor to column 0, line 0
+    lcd.setCursor(0, 0);
+  //Skriver ut texten GOD JUL
+  lcd.print("GOD JUL");
+  //Set the cursor to column 0, line 1
+  lcd.setCursor(0, 1);
+  //Skriver ut texten Honken
+  lcd.print("OCH");
+  //Skriver ut Pastör efter föregående text
+  lcd.println("NYTT ÅR!");
+  //Väntar 3sekunder
+  delay(3000);
 }
 
