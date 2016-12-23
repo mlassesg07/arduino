@@ -65,7 +65,7 @@ void loop() {
   //Väntar 3sekunder
   delay(3000);
   //Raderar texten
-  lcd.clear()
+  lcd.clear();
     //Set the cursor to column 0, line 0
     lcd.setCursor(0, 0);
   //Skriver ut texten Vem är tomten?
@@ -79,7 +79,7 @@ void loop() {
   //Väntar 3sekunder
   delay(3000);
   //Raderar texten
-  lcd.clear()
+  lcd.clear();
     //Set the cursor to column 0, line 0
     lcd.setCursor(0, 0);
   //Skriver ut texten GOD JUL
