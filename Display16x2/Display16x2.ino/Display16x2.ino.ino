@@ -53,7 +53,7 @@ void setup() {
 }
 
 void loop() {
-  // set the cursor to column 0, line 0
+ /* // set the cursor to column 0, line 0
   lcd.setCursor(0, 0);
   //Skriver ut texten Tid sedan reset: på displayen
   lcd.print("Tid sedan reset:");
@@ -93,4 +93,4 @@ void loop() {
   //Väntar 3sekunder
   delay(3000);
 }
-
+*/}
