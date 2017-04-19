@@ -10,6 +10,7 @@
 #include <Adafruit_Sensor.h>
 #include <DHT.h>
 #include <DHT_U.h>
+#include <SD.h>
 
 #define DHTPIN            2         // Pin which is connected to the DHT sensor.
 
