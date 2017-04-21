@@ -98,7 +98,7 @@ Serial.println("card initialized.");
   Serial.println("------------------------------------");
   // Set delay between sensor readings based on sensor details.
   //delayMS = sensor.min_delay / 1000;
-  delayMS = 10000;
+  delayMS = 30000;
 }
 
 void loop() {
@@ -135,7 +135,7 @@ Fortsätta härifrån och plocka in raderna nedanför.
   // build the data string
 dataString = String(sensorReading1) + "," + String(sensorReading2) + "," + String(sensorReading3); // convert to CSV
 saveData(); // save to SD card
-delay(60000); // delay before next write to SD Card, adjust as required
+delay(delayMS); // delay before next write to SD Card, adjust as required
 }
 //
 void saveData(){
