@@ -127,7 +127,9 @@ void loop() {
   }
 }
 
-dataString = String(datumochtid) + "," + String(event.temperature) + "," + String(event.relative_humidity) ; // convert to CSV
+//String(datumochtid) + "," + 
+
+dataString = String(event.temperature) + "," + String(event.relative_humidity) ; // convert to CSV
 saveData(); // save to SD card
 delay(delayMS); // delay before next write to SD Card, adjust as required
 }
