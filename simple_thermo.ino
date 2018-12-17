@@ -170,7 +170,7 @@ void loop() {
 
     Serial.println(" *C");
 
-    if ((event.temperature) < 16)
+    if ((event.temperature) <= 16)
     {
       //Tänder Led1
       digitalWrite(PinLed1, HIGH);  //Sätter Led1 till hög
