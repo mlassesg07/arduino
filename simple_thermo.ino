@@ -135,7 +135,7 @@ void setup() {
 
   //delayMS = sensor.min_delay / 1000;
 
-  delayMS = 30000;
+  delayMS = 3000;
 
 }
 
@@ -171,8 +171,39 @@ void loop() {
     Serial.println(" *C");
 
     if ((event.temperature) < 16)
-      
+    {
+      //Tänder Led1
+      digitalWrite(PinLed1, HIGH);  //Sätter Led1 till hög
+
+      delay(400);                  //Väntar 0,4sek
+
+      digitalWrite(PinLed1, LOW);   //Sätter Led1 till låg
+
+      delay(400);                  //Väntar 0,4sek
+    }
     
+    else if ((event.temperature) >= 17 && (event.temperature) < 19)
+{
+  //Tänder Led2      
+      digitalWrite(PinLed2, HIGH);  //Sätter Led2 till hög
+
+      delay(400);                  //Väntar 0,4sek
+
+      digitalWrite(PinLed2, LOW);   //Sätter Led2 till låg
+
+      delay(400);                  //Väntar 0,4sek
+}
+  else
+{
+  //Tänder Led3
+      digitalWrite(PinLed2, HIGH);  //Sätter Led2 till hög
+
+      delay(400);                  //Väntar 0,4sek
+
+      digitalWrite(PinLed2, LOW);   //Sätter Led2 till låg
+
+      delay(400);                  //Väntar 0,4sek
+}
     
   }
 
@@ -197,5 +228,3 @@ void loop() {
   }
 
 }
-
-
