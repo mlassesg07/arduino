@@ -27,7 +27,6 @@ Based on code by Tom Igoe
 #include <SPI.h>
 
 #define DHTPIN            2         // Pin which is connected to the DHT sensor.
-
 // Uncomment the type of sensor in use:
 #define DHTTYPE           DHT11     // DHT 11 
 //#define DHTTYPE           DHT22     // DHT 22 (AM2302)
@@ -57,11 +56,11 @@ File sensorData;
 //
 //
 
-const int PinLed2 = 11; //Led1 till pinne 11
+const int PinLed1 = 11; //Led1 till pinne 11
 
-const int PinLed3 = 12; //Led2 till pinne 12
+const int PinLed2 = 12; //Led2 till pinne 12
 
-const int PinLed4 = 13; //Led3 till pinne 13
+const int PinLed3 = 13; //Led3 till pinne 13
 
 void setup() {
 
@@ -196,11 +195,11 @@ void loop() {
   else
 {
   //Tänder Led3
-      digitalWrite(PinLed2, HIGH);  //Sätter Led2 till hög
+      digitalWrite(PinLed3, HIGH);  //Sätter Led2 till hög
 
       delay(400);                  //Väntar 0,4sek
 
-      digitalWrite(PinLed2, LOW);   //Sätter Led2 till låg
+      digitalWrite(PinLed3, LOW);   //Sätter Led2 till låg
 
       delay(400);                  //Väntar 0,4sek
 }
